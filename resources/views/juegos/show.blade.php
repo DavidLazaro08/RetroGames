@@ -1,15 +1,10 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ $juego['titulo'] }} - RetroGames</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="{{ asset('css/juegos-detail.css') }}">
-</head>
-<body>
+@extends('layouts.app')
+
+@section('titulo')
+{{ $juego['titulo'] }} - RetroGames
+@endsection
+
+@section('contenido')
     <div class="container">
         <a href="/juegos" class="back-button">Volver a la lista</a>
 
@@ -44,5 +39,5 @@
             </div>
         </div>
     </div>
-</body>
-</html>
+@endsection
+

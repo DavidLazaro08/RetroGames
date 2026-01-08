@@ -2,8 +2,17 @@
 
 namespace App\Http\Controllers;
 
-class JuegosController extends Controller
+class JuegosDetalleController extends Controller
 {
+    public function index()
+    {
+        // Cargar el array de juegos
+        $juegos = require app_path('Data/juegos.php');
+        
+        return view('juegos.index', compact('juegos'));
+    }
+
+
     public function show($id)
     {
         // Cargar el array de juegos desde el archivo Data
