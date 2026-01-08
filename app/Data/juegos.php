@@ -73,33 +73,6 @@ return [
         'descripcion' => 'Acción frenética y el origen de una era.',
         'imagen' => null,
     ],
-    [
-        'id' => 6,
-        'titulo' => 'Sonic the Hedgehog',
-        'plataforma' => 'Mega Drive',
-        'anio' => 1991,
-        'genero' => 'Plataformas',
-        'descripcion' => 'Velocidad pura y un icono de los 90.',
-        'imagen' => null,
-    ],
-    [
-        'id' => 7,
-        'titulo' => 'Final Fantasy VII',
-        'plataforma' => 'PlayStation',
-        'anio' => 1997,
-        'genero' => 'RPG',
-        'descripcion' => 'Un antes y un después en los RPG y en PlayStation.',
-        'imagen' => null,
-    ],
-    [
-        'id' => 8,
-        'titulo' => 'Doom',
-        'plataforma' => 'PC',
-        'anio' => 1993,
-        'genero' => 'Shooter',
-        'descripcion' => 'Acción frenética y el origen de una era.',
-        'imagen' => null,
-    ],
 
     [
         'id' => 9,

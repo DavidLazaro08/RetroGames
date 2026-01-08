@@ -6,20 +6,25 @@ Lista de videojuegos
 
 @section('contenido')
 
-    <h2>Lista de videojuegos</h2>
+    <div class="card">
+        <h2>Lista de videojuegos</h2>
 
-    <ul>
-        @foreach ($juegos as $juego)
-            <li>
-                <strong>
-                    <a href="/juegos/{{ $juego['id'] }}">
-                        {{ $juego['titulo'] }}
-                    </a>
-                </strong>
-                ({{ $juego['plataforma'] }} - {{ $juego['anio'] }})
+        <ul class="game-list">
+            @foreach ($juegos as $juego)
+                <li class="game-item">
+                    <div class="game-title">
+                        <a href="/juegos/{{ $juego['id'] }}">
+                            {{ $juego['titulo'] }}
+                        </a>
+                    </div>
 
-            </li>
-        @endforeach
-    </ul>
+                    <div class="game-meta">
+                        {{ $juego['plataforma'] }} · {{ $juego['anio'] }}
+                    </div>
+                </li>
+            @endforeach
+        </ul>
+    </div>
+
 
 @endsection

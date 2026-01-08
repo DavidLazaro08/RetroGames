@@ -3,28 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@yield('titulo')</title>
+    <title>@yield('titulo') - RetroGames</title>
 
     @vite(['resources/css/app.css', 'resources/js/app.js'])
-
 </head>
 <body>
 
-    <header>
-        <h1>RetroGames</h1>
-        <nav>
-            <a href="/juegos">Lista de juegos</a>
-        </nav>
-        <hr>
+    <header class="site-header">
+        <div class="container">
+            <h1 class="logo">🎮 RetroGames</h1>
+
+            <nav class="nav">
+                <a href="/juegos">Lista</a>
+            </nav>
+        </div>
     </header>
 
-    <main>
+    <main class="container content">
         @yield('contenido')
     </main>
 
-    <hr>
-    <footer>
-        <small>RetroGames - Laravel</small>
+    <footer class="site-footer">
+        <div class="container">
+            <small>RetroGames · Laravel + Blade</small>
+        </div>
     </footer>
 
 </body>
