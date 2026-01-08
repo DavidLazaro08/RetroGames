@@ -1,24 +1,109 @@
-@import 'tailwindcss';
-
-@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
-@source '../../storage/framework/views/*.php';
-@source '../**/*.blade.php';
-@source '../**/*.js';
-
-@theme {
-    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-        'Segoe UI Symbol', 'Noto Color Emoji';
-}
+/* --- RetroGames: estilo básico limpio --- */
 
 body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
-}
-
-header h1 {
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
     margin: 0;
+    background: #f6f7fb;
+    color: #111827;
 }
 
-main {
-    margin-top: 20px;
+.site-header {
+    background: #111827;
+    color: #fff;
+    border-bottom: 1px solid rgba(255,255,255,.08);
+}
+
+.site-header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 12px;
+}
+
+.logo {
+    margin: 0;
+    font-size: 20px;
+    letter-spacing: .2px;
+}
+
+.nav a {
+    color: #fff;
+    text-decoration: none;
+    opacity: .9;
+    padding: 8px 10px;
+    border-radius: 8px;
+}
+
+.nav a:hover {
+    background: rgba(255,255,255,.12);
+    opacity: 1;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 12px;
+}
+
+.content {
+    padding: 22px 0;
+}
+
+/* Tarjeta */
+.card {
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+    padding: 18px;
+    box-shadow: 0 6px 18px rgba(17, 24, 39, .06);
+}
+
+.card h2 {
+    margin: 0 0 14px;
+    font-size: 22px;
+}
+
+/* Lista bonita */
+.game-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 10px;
+}
+
+.game-item {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 12px 14px;
+    border: 1px solid #eef2f7;
+    border-radius: 12px;
+    background: #fbfcff;
+}
+
+.game-item:hover {
+    border-color: #dbe3f1;
+    background: #f7f9ff;
+}
+
+.game-title a {
+    font-weight: 700;
+    color: #111827;
+    text-decoration: none;
+}
+
+.game-title a:hover {
+    text-decoration: underline;
+}
+
+.game-meta {
+    color: #6b7280;
+    white-space: nowrap;
+}
+
+.site-footer {
+    margin-top: 18px;
+    padding: 14px 0;
+    color: #6b7280;
 }
