@@ -94,5 +94,5 @@ El proyecto ya incluye el build de Vite subido (`public/build`), por lo que:
 ---
 
 ## 👥 Autores
-- David
-- Jacobo
+- David Gutiérrez Ortiz
+- Jacobo Domínguez Morales
