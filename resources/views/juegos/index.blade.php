@@ -13,7 +13,7 @@ Lista de videojuegos
             @foreach ($juegos as $juego)
                 <li class="game-item">
                     <div class="game-title">
-                        <a href="/juegos/{{ $juego['id'] }}">
+                        <a href="{{ route('juegos.show', $juego['id']) }}">
                             {{ $juego['titulo'] }}
                         </a>
                     </div>

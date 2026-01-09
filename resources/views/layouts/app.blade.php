@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@yield('titulo') - RetroGames</title>
 
-    @vite(['resources/css/app.css', 'resources/css/juegos-detail.css', 'resources/js/app.js'])
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
+    @if(Route::is('juegos.show'))
+        @vite(['resources/css/juegos-detail.css'])
+    @endif
 </head>
 <body>
 
